@@ -18,7 +18,7 @@ public class PlayerState
 
     public virtual void Enter()
     {
-        Debug.Log("I enter " + animBoolName);
+        player.anim.SetBool(animBoolName, true);
     }
 
     public virtual void Update()
@@ -28,6 +28,6 @@ public class PlayerState
 
     public virtual void Exit()
     {
-        Debug.Log("I exit " + animBoolName);
+        player.anim.SetBool(animBoolName, false);
     }
 }
