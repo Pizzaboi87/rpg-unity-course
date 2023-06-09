@@ -377,6 +377,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   jumpForce: 12
+  dashCooldown: 1
+  dashSpeed: 25
+  dashDuration: 0.2
   groundCheck: {fileID: 41062586}
   groundCheckDistance: 0.15
   wallCheck: {fileID: 2074354752}
@@ -543,8 +546,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648577113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2339, y: -3.85, z: 0}
-  m_LocalScale: {x: 15.2079, y: 1, z: 1}
+  m_LocalPosition: {x: 0.2322, y: -4.05, z: 0}
+  m_LocalScale: {x: 25.83214, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
