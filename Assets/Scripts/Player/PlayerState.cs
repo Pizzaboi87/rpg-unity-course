@@ -11,10 +11,10 @@ public class PlayerState
 
     protected float xInput;
     protected float yInput;
-    private string animBoolName;
 
     protected float stateTimer;
     protected bool triggerCalled;
+    private string animBoolName;
 
     public PlayerState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName)
     {
