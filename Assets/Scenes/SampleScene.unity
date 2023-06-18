@@ -6797,7 +6797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.270527, y: -0.31999975, z: -10}
+  m_LocalPosition: {x: -10.259182, y: -0.31999975, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6889,6 +6889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7360effba30c7dc42a2e6a1554197522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackDirection: {x: 8, y: 8}
+  knockbackDuration: 0.07
   attackCheck: {fileID: 1756494986}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 987022015}
@@ -6901,6 +6903,8 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
+  stunDuration: 1
+  stunDirection: {x: 4, y: 8}
   moveSpeed: 1.5
   idleTime: 2
   attackDistance: 1.5
@@ -7452,6 +7456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7191067926591e4c9d1410f87ea9fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackDirection: {x: 0, y: 0}
+  knockbackDuration: 0
   attackCheck: {fileID: 50195225}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 41062586}
@@ -7478,7 +7484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318820128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.92, y: -1.62, z: 0}
+  m_LocalPosition: {x: -9.43, y: -2.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7748,7 +7754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441595292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.270527, y: -0.31999975, z: -10}
+  m_LocalPosition: {x: -10.259182, y: -0.31999975, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
