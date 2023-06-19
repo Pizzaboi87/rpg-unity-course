@@ -7554,7 +7554,6 @@ MonoBehaviour:
   counterAttackDuration: 0.2
   moveSpeed: 8
   jumpForce: 12
-  dashCooldown: 1
   dashSpeed: 25
   dashDuration: 0.2
 --- !u!4 &1318820130
@@ -8022,6 +8021,7 @@ GameObject:
   - component: {fileID: 1751517438}
   - component: {fileID: 1751517440}
   - component: {fileID: 1751517439}
+  - component: {fileID: 1751517441}
   m_Layer: 0
   m_Name: SkillManager
   m_TagString: Untagged
@@ -8069,7 +8069,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887f63211b9a324439a39b349fe36130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dash: {fileID: 0}
+--- !u!114 &1751517441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751517437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709ff1648925585408870a959279c4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0
+  clonePrefab: {fileID: 8169567315440002903, guid: 38e71faa0070a4e4aa042aca21b8a21f, type: 3}
 --- !u!1 &1756494985
 GameObject:
   m_ObjectHideFlags: 0
