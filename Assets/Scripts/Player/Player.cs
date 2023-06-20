@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : Entity
 {
     public bool isBusy { get; private set; }
+    public SkillManager skill { get; private set; }
 
     [Header("Attack details")]
     public Vector2[] attackMovement;
@@ -51,6 +52,7 @@ public class Player : Entity
     protected override void Start()
     {
         base.Start();
+        skill = SkillManager.instance;
         stateMachine.Initialize(idleState);
     }
 

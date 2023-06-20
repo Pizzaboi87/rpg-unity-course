@@ -119,3 +119,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf05d1d6ec02d214391fd898a742e9f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorLoosingSpeed: 1
+  cloneDuration: 1.5
