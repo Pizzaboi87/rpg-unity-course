@@ -8,6 +8,7 @@ public class Sword_Skill_Controller : MonoBehaviour
     private Rigidbody2D rb;
     private CircleCollider2D cd;
     private Player player;
+    private bool canRotate = true;
 
     private void Awake()
     {
@@ -20,5 +21,22 @@ public class Sword_Skill_Controller : MonoBehaviour
     {
         rb.velocity = _dir;
         rb.gravityScale = _gravityScale;
+    }
+
+    private void Update()
+    {
+        if (canRotate)
+            transform.right = rb.velocity;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        canRotate = false;
+        cd.enabled = false;
+
+        rb.isKinematic = true;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+        transform.parent = collision.transform;
     }
 }
